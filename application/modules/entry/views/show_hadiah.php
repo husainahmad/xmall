@@ -1,0 +1,1 @@
+<img src="<?php echo base_url();?>assets/images/hadiah/<?php echo $gambar['Gambar'];?>" style="border:1px;" height="170" width="200">
