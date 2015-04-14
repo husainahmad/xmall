@@ -20,7 +20,7 @@ function get_daftar_member() {
 function get_daftar_member_by_namalengkap($NamaLengkap) {
 	$result = $this->db->query("select m.MemberId, m.IdCard, m.NamaLengkap, m.Handphone, m.Email, count(k.KuponId) as JumlahKupon from member m 
 				left join kupon k on k.MemberId = m.MemberId where m.MemberId is not null 
-				and m.NamaLengkap like '%".$NamaLengkap."%' group by m.MemberId ")->result_array();
+				and m.NamaLengkap like '%".$NamaLengkap."%' or m.IdCard like '%".$NamaLengkap."%' group by m.MemberId ")->result_array();
 	return $result;
 }
 
