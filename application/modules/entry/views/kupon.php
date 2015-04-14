@@ -53,12 +53,14 @@
 	<table>
 	<tr><td align="center" colspan="2"><b>ID Card</b></td></tr>
 	<tr>
-	<td><input type="text" class="form-control" id="IdCard" name="IdCard" style="width:500px;text-align:center;" onKeyUp="enterID(this);"></td>
+	<td><input type="text"  onkeypress="showMember('show_member/'+IdCard.value, IdCard.value)" class="form-control" id="IdCard" name="IdCard" style="width:500px;text-align:center;" onKeyUp="enterID(this);"></td>
 	<td><button style="margin-top:-1px;margin-left:5px;height:33px;" class="btn btn-primary" type="button" onClick="showMember('show_member/'+IdCard.value, IdCard.value)">....</button></td>
 	</tr>
 	</table>
 	</center>
+	<form action="<?php echo base_url();?>entry/save_kupon" method="post" name="frm" id="frm">	
 	<div id="Member"></div>
+	</form>
 	<!--
 	</form>
 	-->
