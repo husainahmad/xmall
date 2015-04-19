@@ -16,6 +16,12 @@
 </ul>
 </li>
 
+<li class="treeview"><a href="#"><i class="fa fa-edit"></i><span>Report</span><i class="fa fa-angle-left pull-right"></i></a>
+<ul class="treeview-menu">
+	<li><a href="<?php echo base_url();?>reports/member" style="margin-left: 10px;"><i class="fa fa-angle-double-right"></i> Pengunjung</a></li>
+</ul>
+</li>
+
 <li class="treeview"><a href="#"><i class="fa fa-laptop"></i><span>Utilities</span><i class="fa fa-angle-left pull-right"></i></a>
 <ul class="treeview-menu">
 	<li><a href="<?php echo base_url();?>utilities/ubah_password" style="margin-left: 10px;"><i class="fa fa-angle-double-right"></i> Ubah Password</a></li>

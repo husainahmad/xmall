@@ -45,7 +45,9 @@
 		<!-- script untuk alert
 		<script src="<?php echo base_url()?>assets/jss/jquery.js" type="text/javascript" ></script>
 		<script src="<?php echo base_url()?>assets/jss/form.js" type="text/javascript" ></script>--> 
-
+ 		<script src="<?php echo base_url()?>assets/js/input-mask/jquery.inputmask.js" type="text/javascript"></script>
+        <script src="<?php echo base_url()?>assets/js/input-mask/jquery.inputmask.date.extensions.js" type="text/javascript"></script>
+        
 		<!-- script untuk dialog -->
 		
 
@@ -57,3 +59,11 @@
 </body>
 
 </html>
+
+		<script type="text/javascript">
+            $(function() {
+            	$("#datemask").inputmask("dd/mm/yyyy", {"placeholder": "dd/mm/yyyy"});
+                //Datemask2 mm/dd/yyyy
+                $("#datemask2").inputmask("mm/dd/yyyy", {"placeholder": "mm/dd/yyyy"});
+            });
+            </script>
